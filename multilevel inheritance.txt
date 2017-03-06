@@ -1,0 +1,38 @@
+class LivingThing {
+	void Visibility()
+	{
+		System.out.println("I am visible to all");
+		
+	}
+
+}
+class Animal extends LivingThing {
+	void Eat()
+	{
+		System.out.println("I can eat through my mouth");
+	}
+
+}
+
+class Dog extends Animal {
+	void Sound()
+	{
+		System.out.println("I can bark");
+	}
+
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		d.Visibility();
+		d.Eat();
+		d.Sound();
+	}
+
+}
+
+
+
+
+output:
+I am visible to all
+I can eat through my mouth
+I can bark

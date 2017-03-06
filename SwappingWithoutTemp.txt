@@ -1,0 +1,16 @@
+public class SwapWithoutTemp {
+
+	public static void main(String[] args) {
+		int x = 10;
+		int y = 20;
+
+		System.out.println("value of x  and y before swapping, x: " + x +" b: " + y);
+
+		x = x+ y; //now a is 30 and b is 20
+		y = x -y; //now a is 30 but b is 10 (original value of a)
+		x = x -y; //now a is 20 and b is 10, numbers are swapped
+
+		System.out.println("value of x and y after swapping, x: " + x +" y: " + y);
+      }
+
+}

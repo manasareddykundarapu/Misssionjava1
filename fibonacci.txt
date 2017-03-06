@@ -1,0 +1,33 @@
+public class Fibo {
+
+	public static void main(String[] args) {
+		int n=5;
+		Fibon(n);
+	}
+
+	 static void Fibon(int n) {
+		if(n==0)
+			System.out.println("0");
+		if(n==1)
+			System.out.println("1");
+		
+		int f1=0,f2=1;
+
+		for(int i=1;i<n;i++)
+		{
+			 int f3=f1+f2;
+			 System.out.println(""+f3);
+			f1=f2;
+			f2=f3;
+		}
+		
+	}
+
+	}
+
+
+output:
+1
+2
+3
+5

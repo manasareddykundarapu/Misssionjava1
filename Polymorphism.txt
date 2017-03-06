@@ -1,0 +1,43 @@
+public class Vehicle {
+	void Move()
+	{
+		System.out.println("I can Move");
+	}
+
+}
+class  Bycycle extends Vehicle
+{
+	void Property(int tyres)
+	
+	{
+        tyres=2;
+		System.out.println("I am a bycycle,have 2 tyres");
+	}
+	
+}
+class Bike extends Bycycle {
+	void Property(int tyres,int mileage)
+	{
+		tyres=2;
+		mileage=60;
+		System.out.println("I am a bike, i have 2 tyres");
+		System.out.println("My mileage is 60");
+	}
+
+	public static void main(String[] args) {
+		Bike b=new Bike();
+		b.Property(2,60);
+		b.Property(2);
+		b.Move();
+		
+		}
+
+}
+
+
+
+output:
+I am a bike, i have 2 tyres
+My mileage is 60
+I am a bycycle,have 2 tyres
+I can Move

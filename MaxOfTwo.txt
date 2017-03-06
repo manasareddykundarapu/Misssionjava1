@@ -1,0 +1,12 @@
+public class MaxOfTwo {
+
+	public static void main(String[] args) {
+			int num1 = 20;
+			int num2 = 36;
+			if(num1>num2)
+				System.out.println("First number is maximum");
+			else
+				System.out.println("second number is maximum");
+	}
+
+}
